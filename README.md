@@ -55,16 +55,31 @@ humidad-skill/
 
 ## Prerequisites
 
-Before using this skill or templates, ensure you have the following installed:
+### Required
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) (for WPF development)
-- [Avalonia Extension](https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.AvaloniaVS) (for Avalonia development)
-- One of the following AI IDEs (for using as a Skill):
-  - [Trae IDE](https://trae-ide.com/)
-  - [CodeX IDE](https://codex.ide/)
-  - [CodeBuddy IDE](https://codebuddy.ai/)
-  - [ClaudeCode](https://claude.ai/claudecode)
+
+### Optional Development Tools
+
+You can choose any of the following IDEs based on your platform and preference:
+
+| Tool | Platform | WPF Support | Avalonia Support | Recommendation |
+|------|----------|-------------|------------------|----------------|
+| [Visual Studio 2022](https://visualstudio.microsoft.com/) | Windows | ✅ Full | ✅ (with extension) | Windows + WPF |
+| [JetBrains Rider](https://www.jetbrains.com/rider/) | Windows/macOS/Linux | ✅ Full | ✅ Native | Cross-platform |
+| [Visual Studio Code](https://code.visualstudio.com/) | Windows/macOS/Linux | ⚠️ Limited | ✅ (with extension) | Lightweight |
+| [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/) | Windows/macOS/Linux | ✅ (no designer) | ✅ (no designer) | Command-line only |
+
+> **Note**: Visual Studio 2022 is NOT required. You can use any IDE that supports .NET development.
+
+### AI IDEs (for using as a Skill)
+
+One of the following AI IDEs (optional, required only for Skill functionality):
+
+- [Trae IDE](https://trae-ide.com/)
+- [CodeX IDE](https://codex.ide/)
+- [CodeBuddy IDE](https://codebuddy.ai/)
+- [ClaudeCode](https://claude.ai/claudecode)
 
 ---
 
