@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:semi="clr-namespace:Semi.Avalonia;assembly=Semi.Avalonia"
+        x:Class="Layout2_TopNav.MainWindow"
+        Title="TopNav Layout" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="{DynamicResource HeaderBackgroundColor}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12">
+                <TextBlock Text="HumiDAD" FontSize="18" FontWeight="Bold" Margin="0 0 24 0" />
+                <semi:SemiButton Content="File" Style="{StaticResource LinkButton}" />
+                <semi:SemiButton Content="Edit" Style="{StaticResource LinkButton}" />
+                <semi:SemiButton Content="View" Style="{StaticResource LinkButton}" />
+                <semi:SemiButton Content="Help" Style="{StaticResource LinkButton}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 0 0" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Background="White" Margin="2">
+            <StackPanel Margin="16">
+                <TextBlock Text="MainContent" FontSize="18" FontWeight="Bold" />
+                <TextBlock Text="RegionID: R2 - MainContent" Margin="0 8 0 0" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

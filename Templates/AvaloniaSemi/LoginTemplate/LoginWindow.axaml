@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:semi="clr-namespace:Semi.Avalonia;assembly=Semi.Avalonia"
+        x:Class="LoginTemplate.LoginWindow"
+        Title="Login" Height="400" Width="360">
+    <Grid Background="{DynamicResource BackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="{DynamicResource PrimaryColor}">
+            <TextBlock Text="HumiDAD" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White" />
+        </Grid>
+        <Border Grid.Row="1" Margin="24" Background="White" CornerRadius="8" Padding="24">
+            <StackPanel>
+                <TextBlock Text="Sign In" FontSize="20" FontWeight="Bold" Margin="0 0 0 20" />
+                <semi:SemiTextBox PlaceholderText="Username" Margin="0 8 0 0" />
+                <semi:SemiPasswordBox PlaceholderText="Password" Margin="0 8 0 0" />
+                <semi:SemiButton Content="Login" Style="{StaticResource PrimaryButton}" Margin="0 20 0 0" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 12 0 0">
+                    <TextBlock Text="Forgot password?" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <TextBlock Grid.Row="2" Text="HumiDAD - Desktop Application Development" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+</Window>

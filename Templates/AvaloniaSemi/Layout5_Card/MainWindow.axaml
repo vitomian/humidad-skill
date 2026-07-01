@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:semi="clr-namespace:Semi.Avalonia;assembly=Semi.Avalonia"
+        x:Class="Layout5_Card.MainWindow"
+        Title="Card Layout" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="{DynamicResource HeaderBackgroundColor}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12">
+                <TextBlock Text="Dashboard" FontSize="18" FontWeight="Bold" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Background="{DynamicResource BackgroundColor}" Margin="2">
+            <ItemsControl ItemsPanel="{x:Static Grid.ItemsPanelTemplateKey}">
+                <Border Background="White" Margin="8" CornerRadius="8" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Card 1" FontSize="16" FontWeight="Bold" />
+                        <TextBlock Text="RegionID: R2 - CardArea" Margin="0 8 0 0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" Margin="8" CornerRadius="8" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Card 2" FontSize="16" FontWeight="Bold" />
+                        <TextBlock Text="RegionID: R2 - CardArea" Margin="0 8 0 0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" Margin="8" CornerRadius="8" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Card 3" FontSize="16" FontWeight="Bold" />
+                        <TextBlock Text="RegionID: R2 - CardArea" Margin="0 8 0 0" />
+                    </StackPanel>
+                </Border>
+                <Border Background="White" Margin="8" CornerRadius="8" Padding="16">
+                    <StackPanel>
+                        <TextBlock Text="Card 4" FontSize="16" FontWeight="Bold" />
+                        <TextBlock Text="RegionID: R2 - CardArea" Margin="0 8 0 0" />
+                    </StackPanel>
+                </Border>
+            </ItemsControl>
+        </Border>
+    </Grid>
+</Window>

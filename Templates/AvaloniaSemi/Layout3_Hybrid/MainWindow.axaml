@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:semi="clr-namespace:Semi.Avalonia;assembly=Semi.Avalonia"
+        x:Class="Layout3_Hybrid.MainWindow"
+        Title="Hybrid Layout" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="{DynamicResource SidebarBackgroundColor}" Margin="2">
+            <StackPanel>
+                <TextBlock Text="Sidebar" FontSize="18" FontWeight="Bold" Margin="12 12 12 24" Foreground="{DynamicResource TextPrimaryColor}" />
+                <semi:SemiButton Content="Home" Style="{StaticResource LinkButton}" HorizontalAlignment="Left" Margin="8" />
+                <semi:SemiButton Content="Settings" Style="{StaticResource LinkButton}" HorizontalAlignment="Left" Margin="8" />
+                <semi:SemiButton Content="Help" Style="{StaticResource LinkButton}" HorizontalAlignment="Left" Margin="8" />
+            </StackPanel>
+        </Border>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="{DynamicResource HeaderBackgroundColor}" Margin="2">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12">
+                    <TextBlock Text="HumiDAD" FontSize="18" FontWeight="Bold" />
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Background="White" Margin="2">
+                <StackPanel Margin="16">
+                    <TextBlock Text="MainContent" FontSize="18" FontWeight="Bold" />
+                    <TextBlock Text="RegionID: R3 - MainContent" Margin="0 8 0 0" />
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="2" Background="{DynamicResource FooterBackgroundColor}" Margin="2">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="12">
+                    <TextBlock Text="Status: Ready" FontSize="12" />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
